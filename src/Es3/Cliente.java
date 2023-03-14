@@ -14,12 +14,18 @@ public class Cliente {
 		this.dataIscrizione = data;
 		this.codicePersonale = nome + Cognome + Math.random();
 		System.out.println("nuovo utente reggistrato");
+		
+
+	};
+	
+	public void stampaDati() {
 		System.out.println(nome);
 		System.out.println(cognome);
 		System.out.println(email);
 		System.out.println(dataIscrizione);
 		System.out.println(codicePersonale);
-
-	};
+		
+		
+	}
 
 }

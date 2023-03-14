@@ -9,7 +9,7 @@ public class Articolo {
 
 	private Articolo() {
 		codiceArticolo = "Art" + Math.random() * 20;
-		descrizioneArticolo = "stupendo";
+		descrizioneArticolo = "";
 		prezzo = 999;
 		pezziDisponibili = 0;
 		System.out.println("Articolo creato. " + "\n" + "codice: " + this.codiceArticolo + "\n Descrizione: "
@@ -24,6 +24,17 @@ public class Articolo {
 		System.out.println("Articolo creato. " + "\n" + "codice: " + this.codiceArticolo + "\n Descrizione: "
 				+ this.descrizioneArticolo + "\n prezzo: " + this.prezzo);
 
+	}
+	public double getPrice() {
+		return prezzo;
+	}
+	public void stampaDatiArticolo() {
+		System.out.println(codiceArticolo);
+		System.out.println(descrizioneArticolo);
+		System.out.println(prezzo);
+		System.out.println(pezziDisponibili);
+		
+		
 	}
 
 }
